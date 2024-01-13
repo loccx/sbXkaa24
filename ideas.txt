@@ -4,3 +4,18 @@
  - chrome extension call to our server, server sends request to ecosia
  - keep track of how many trees saved
  - AI buddy
+
+progress:
+3 components:
+1. ecosia
+2. our server
+3. web extension
+
+ecosia: how to make the search requeset to it via API call, 
+our server: connection to database and web extension, and routing using NPM
+web extension: display UI and make calls to server,
+    FEATURES:
+        - primary feature: ecosia API call
+        - secondary feature: keep track of trees planted / CO2 reduced
+        - tertiary feature: chat feature with GPT/ OPENAI
+
