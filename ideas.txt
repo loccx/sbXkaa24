@@ -1,5 +1,6 @@
 1. biking parking tracker
 
-2. ecosia script
-
-3. 
+2. ecosia script - ding ding ding!
+ - chrome extension call to our server, server sends request to ecosia
+ - keep track of how many trees saved
+ - AI buddy
