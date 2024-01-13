@@ -17,5 +17,6 @@ web extension: display UI and make calls to server,
     FEATURES:
         - primary feature: ecosia API call
         - secondary feature: keep track of trees planted / CO2 reduced
+                - animation for tree planting / frequency with scroll bar
         - tertiary feature: chat feature with GPT/ OPENAI
 
