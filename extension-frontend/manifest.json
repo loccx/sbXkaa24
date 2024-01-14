@@ -3,15 +3,23 @@
   "name": "ECOSIA Connection",
   "description": "Base Level Extension",
   "version": "1.0",
-  "action": {
-  },
   "background": {
-    "service_worker": ""
+    "service_worker": "background.js"
   },
-  "icons": {
-  },
+  "icons": {},
   "permissions": [
-    "activeTab"
-  ]
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
+  "host_permissions": [
+    "http://www.blogger.com/*",
+    "http://*.google.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "1",
+      "enabled": true,
+      "path": "static_rules.json"
+    }]
+  }
 }
-
