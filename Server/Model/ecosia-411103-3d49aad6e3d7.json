@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "ecosia-411103",
+  "private_key_id": "3d49aad6e3d7b25394348d2be8e2cbfc2e383e48",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCpe51v2zJHQimR\n+LVcy8pCPJik9/alBUN3xK9RN8vUi9F2cW6s5uDOagMKR7Vm1XfNra2IzmGmh6mB\n0dX06aOAq2qlHKpJOrDe5nGaC/2+fEuEX1eeJu+ow/iInN5Nuzab8OXcxDQGwE2U\nwqfyBbPHHejgQHxSzhNzgeeIecF84mWCOZsnqUFhczISNUpsjHVmP3tXULiN/NYY\nTPwRseDijXmepXldjKJOJVaX5JPUT/88SCyG/U9SZf3Z9FsvU6BWG8s53iXnlENS\nPEBp3VjDX0dusxjBWvSrNAd9K74Tvpq+I3V9uKKtC8moAQq86sLDBUH7WCD5AVNR\nYI/NUErRAgMBAAECggEAFllIn3FmJeNhm/AR6lStLSLUdhyEl6okBW0YOTuEU1jE\nnDvE/mPLjSyJjhd6oj7P931JftrIIa+N+KJ09kDA4Ly56V/oTJPCswHsRQYDxdSa\nGLCB20cDH1wIL+uPnOxs/Q89IGl2+tTs5grtHosF8+HLzZZzTnACPJ8KqwJzM0Zo\nDnS4JtNlI+OEP4PLRHh8KP6xbUBLhGSqJYmUxZZoYMPJDJ3+/JO2K5KMgHglohoH\nZZWdRT6ir/vOGu54jVZfTi9SmWoca9rKjyF6YWv9DNr4oFht9rbDxBVUfIuHi0J4\nliE9FH6V3EQDCueBFcnnlMjnWCjyM7ZcEr98oXwZyQKBgQDqdZSkuPHnEu8aj4TW\n9wz28i/JE59+GL+Sk893F2RPxX3/9yQgGEVWgmxovNEer2ZhWr4NHBpKhDTT2ffj\nFWFqMN78DgPZ9OWrWCCOGXjmi4/Gpg5r+0jh++kqJPDE0MYajdP8IdcG9RKtu5fo\nAVsiL6Ioa1bY43odWX8TUfq9VwKBgQC5Dc5qoGCeSFXB/RbdBtWtc1M5SWNbYMtR\njYDyT3aQ14BX7oJ8cgwlmob7oTuuqgwcy+KNDjrDcHN1Cs+itF80StcAj2xmqzIq\nby0hE5hzJBTGxeL99yngH4fAjhWHIZ1x5IpjNYAFNbInRX/yDcO5BhJ2fL3ZdAIX\nqTc7o2v4FwKBgEapuWsL8pxaMIYoyzierOGgjJZlu6QdgV+D/Ps/qZQBScBjlBe4\nOO2h0VqfzccZxhmBZ9Y7qhDbV7Ch+PwP7ZQ7tnjxIGgIT1Ac93LcanvRhDuywJX6\n3jR94AA7sfUflxVZuZI8ALqwEjkaWOYrwnPDN3RHJZ2osZ024/3Gr3NxAoGAKXcj\ngpbvL2hr9uzcG6i1ZolJ47NDFS2qQVrgwur1WV1Af/OMv4/aku5+QpINSoUF88nn\nuM2wcyyWYmqKvh2Gm7QNWy3ID3Va51FEHn5CkcJK+YNL6rZgZr0J8SalQkNRAT1B\nmRta1VAD3HLhSX62FZZ7upsW+0vYUC71lmJ3Bf8CgYBojmvYF//Bt5HBv6f1Przo\nvm1WC2B1vFibb8mdJGVrb/ec9+EhCw25w7kM/fYEuspBo387baUKalCwa/YRm+ef\nCLFy+BjYvcjfzO1O/V22K5VheIqPdiMizZxUdAQg1dOMQH67XmfJfp38J6P+8DTA\nu/v1Kp+MeMMxWqF+F5NYeA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "ecosia-791@ecosia-411103.iam.gserviceaccount.com",
+  "client_id": "102774292391229564730",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ecosia-791%40ecosia-411103.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
