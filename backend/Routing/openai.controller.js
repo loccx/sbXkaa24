@@ -3,7 +3,6 @@ const fs = require("fs");
 const path = require("path");
 
 const openai = new OpenAI({
-  apiKey: "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"
 });
 const assistant = "asst_hxWwX7qqVLujfQi5iPI6VzkC";
 const dataFilePath = path.join(__dirname, "data.json"); // Absolute path to data.json
