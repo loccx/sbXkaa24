@@ -1,22 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
+import './App.css';
+
+const backendServerURL = 'https://eager-months-clap.loca.lt';
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('');
-  const [backendResponse, setBackendResponse] = useState('');
-
-  useEffect(() => {
-    axios.get('/tree')
-      .then(response => {
-        setBackendResponse(response.data);
-      })
-      .catch(error => {
-        console.error('Error fetching data from the backend:', error);
-      });
-  }, []);
 
   const handleSearch = () => {
-    axios.post('/', { query: searchQuery })
+    axios.post(`${backendServerURL}/`, { query: searchQuery })
       .then(response => {
         console.log('Backend response:', response.data);
       })
@@ -26,8 +18,8 @@ function App() {
   };
 
   return (
-    <div>
-      <h1>Your React App</h1>
+    <div className="container">
+      <h1>TreeSearch</h1>
       <div>
         <label>
           Search Query:
@@ -38,9 +30,6 @@ function App() {
           />
         </label>
         <button onClick={handleSearch}>Search</button>
-      </div>
-      <div>
-        <p>Response from Backend: {backendResponse}</p>
       </div>
     </div>
   );
