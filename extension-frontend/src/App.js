@@ -1,20 +1,32 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import './App.css';
+import axios from 'axios';
 
-const backendServerURL = 'https://eager-months-clap.loca.lt';
+const backendServerURL = 'https://kind-seals-reply.loca.lt';
+
+function makeRequest(method, endpoint, data) {
+  return axios({
+    method: method,
+    url: `${backendServerURL}${endpoint}`,
+    data: data
+  });
+}
+
+function searchEcosia(query) {
+  makeRequest('post', '/', { query: query })
+    .then(response => {
+      console.log("Search response:", response.data);
+    })
+    .catch(error => {
+      console.error("Error in Ecosia search:", error);
+    });
+}
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleSearch = () => {
-    axios.post(`${backendServerURL}/`, { query: searchQuery })
-      .then(response => {
-        console.log('Backend response:', response.data);
-      })
-      .catch(error => {
-        console.error('Error sending search query to the backend:', error);
-      });
+    searchEcosia(searchQuery);
   };
 
   return (
