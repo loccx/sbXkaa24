@@ -24,7 +24,8 @@ def get_data():
     fetchData = {}
     for doc in docs:
         print(f'{doc.id} => {doc.to_dict()}')
-        fetchData[doc.id] = doc.to_dict()
+        fetchData["id"] = doc.id
+        fetchData["data"] = doc.to_dict()
     return fetchData
 
 # Update data in Firestore
@@ -39,17 +40,20 @@ def delete_data(document_id):
     doc_ref.delete()
     print(f'Data deleted successfully.')
 
-if __name__ == '__main__':
+def increment_searchHistory():
     data = get_data()
-    for id in data:
-        print(id, data[id])
+    data["data"]["num_searches"] += 1
+    update_data(data["id"], data["data"])
     
-    
-    # Add data
-    #add_data()
+if __name__ == '__main__':
+    increment_searchHistory()
 
     # Retrieve data
-    #get_data()
+    print("Data right now: ")
+    get_data()
+
+    # Add data
+    #add_data()
 
     # Update data
     """document_id_to_update = 'your_document_id_here'  # Replace with the actual document ID
@@ -57,8 +61,8 @@ if __name__ == '__main__':
     update_data(document_id_to_update, updated_data)"""
 
     # Retrieve updated data
-    get_data()
-
+    #get_data()
+    
     # Delete data
     """document_ids = ['Fk7HZJltatbjVMR85lk7', '94JEEURGjhqPaCOtcB4s', 'O8v2nFevwPE13N6HJlDp']
     for docId in document_ids:

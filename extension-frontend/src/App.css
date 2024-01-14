@@ -1,0 +1,13 @@
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #aaffaa; /* Pastel green background */
+  }
+  
+  .custom-heading {
+    color: #8b4513; /* Brown text color */
+    font-family: 'Arial', sans-serif; /* Choose a better font */
+  }
+ 
