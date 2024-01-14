@@ -84,8 +84,8 @@ app.get("/chat", (req, res) => {
 
 app.post("/chat", (req, res) => {
   sendMessage(req.body.message)
-    .then(() => {
-      res.status(200).send("Success");
+    .then((message) => {
+      res.status(200).send(message);
     })
     .catch((err) => {
       console.log(req.body.message);

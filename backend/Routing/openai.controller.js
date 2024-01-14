@@ -45,7 +45,8 @@ async function sendMessage(
   while(run.status != "completed" && run.status != "cancelled" && run.status != "failed" && run.status != "expired"){
     run = await openai.beta.threads.runs.retrieve(thread_id, run.id);
   }
-  return run.id;
+  const messages = await openai.beta.threads.messages.list(thread_id);
+  return messages.data[0].content[0].text.value;
 }
 
 async function getMessages(thread_id = threads[threads.length - 1]) {
