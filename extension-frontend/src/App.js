@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import axios from 'axios';
 
-const backendServerURL = 'https://kind-seals-reply.loca.lt';
+const backendServerURL = 'full-horses-love.loca.lt';
 
 function makeRequest(method, endpoint, data) {
   return axios({
